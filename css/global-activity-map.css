@@ -1,0 +1,100 @@
+.global-activity-map-container {
+	width: 100%;
+	height: 200px;
+	margin-top: 30px;
+	background : white;
+}
+
+.global-privacy-levels {
+	margin-top: 3em;
+	width: 100%;
+	padding : 0em .5em 0em .5em;
+}
+
+.global-privacy-levels span {
+
+	width: 1.3em;	
+	height: 1.3em;
+	position: relative;
+	margin : 0;
+	background: white;
+	padding : 0;
+	float: left;
+	border-radius: 50%;
+	margin : .5em 1em .5em 0em;
+}
+
+span.level-1 {
+  background-color: #A925FF;
+}
+span.level-2 {
+  background-color: #FA7BA5;
+}
+
+span.level-3 {
+  background-color: #FA8ED6;
+}
+
+span.level-4 {
+  background-color: #FDBF39;
+}
+
+span.level-5 {
+  background-color: #FA7D2C;
+}
+
+span.level-6 {
+  background-color: #F9430F;
+}
+
+span.level-7 {
+  background-color: #F94849;
+}
+
+span.level-8 {
+  background-color: #F90E3C;
+}
+
+.buttons-row a {
+	/*border: 1px solid #E0CB14;*/
+	border:1px solid white;
+	color : black;
+}
+
+.buttons-row a.active, .tabs .active {
+	/*background-color: #E0CB14;*/
+	color : #8C8C90;
+	background-color: white;
+}
+.tabs .content-block {
+	margin : 0 auto;
+}
+
+.buttons-row .button:first-child, .buttons-row .button:last-child {
+	border-radius: 0px 0px 0px 0px;
+}
+
+
+ul.global-categories {
+	padding:0; margin:0; margin-left:20px; position:relative;
+	list-style-type: none;
+	padding : 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

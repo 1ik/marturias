@@ -1,0 +1,46 @@
+.sign-up-map {
+	background : white;
+	height: 200px;	
+}
+.sign-content {
+	position: relative;
+}
+.sign-content h3{
+	color: white;
+}
+
+.signup-form .buttons, .login-form .buttons{
+	background : #ECC753;
+	border : none;
+	border-radius: 3px;
+	color : white;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 80%;
+	position: relative;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+
+.login-form .buttons {
+	font-size: 1.7em;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 95%;
+}
+
+.login-form {
+	padding : 10px;
+}
+
+.login-form input[type=text], .login-form input[type=password] {
+	width: 95%;
+	font-size: 1.7em;
+	border : none;
+	padding: 5px;
+	height: 2em;
+	margin-top: 10px;
+	border-radius: 2px;
+}

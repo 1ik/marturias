@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Framework7</title>
+    <link rel="stylesheet" href="css/framework7.css">
+    <link rel="stylesheet" href="css/kitchen-sink.css">
+    <link rel="stylesheet" href="vendors/font-awesome-4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/my-app.css">
+    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="stylesheet" type="text/css" href="css/global-activity-map.css">
+</head>
+  <body>
+  
+    <div class="statusbar-overlay"></div>
+    
+    <div class="panel-overlay"></div>
+
+    <div class="panel panel-left panel-reveal">
+        <div class="view view-left">
+            <div class="navbar left-navbar">
+              <div class="navbar-inner">
+                  <div class="left">
+                      <div class="left icon-holder">
+                          <i class="fa fa-user" ></i>
+                      </div>
+                      <div class="left icon-holder">
+                          <i class="fa fa-map-marker" ></i>
+                      </div>
+                      <div class="left icon-holder">
+                          <i class="fa fa-bookmark" ></i>
+                      </div>
+                      <div class="left icon-holder">
+                          <i class="fa fa-inbox" ></i>
+                      </div>
+                      <div class="left icon-holder">
+                          <i class="fa fa-bell-o" ></i>
+                      </div>
+
+                  </div>
+                  <div class="right icon-holder" >
+                       <i class="fa fa-cogs" style="margin-left: 8px"></i>
+                  </div>
+              </div>
+            </div>
+
+          <div class="pages navbar-through">
+            <div data-page="panel-left" class="page panel-left-container">
+
+              <div class="page-content">
+                <div class="list-block">
+
+                  <ul class="left-panel-list">
+
+                    <li data-page= "hitstory_god.html">
+                      <a href="#" class="item-link awesome">
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">
+                                <i class="fa fa-globe"></i> History With God
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li data-page="encouraging-words.html" >
+                      <a href="#" class="item-link">
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">
+                              <i class="fa fa-comment"></i> Encouraging words
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li data-page = "recent-miracles.html">
+                      <a href="#" class="item-link">
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">
+                              <i class="fa fa-clock-o"></i> Recent Miracles
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li data-page="miracle-journal.html">
+                      <a href="#" class="item-link">
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title">
+                              <i class="fa fa-book"></i> Miracle Journal
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+  
+                    <li data-page="global.html">
+                      <a class="item-link awesome">
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title" >
+                                <i class="fa fa-globe"></i> Global Activity Map
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="item-link">
+                        <div class="item-content">
+                          <div class="item-inner">
+                            <div class="item-title" style="padding-top : 10px;">
+                              <i class="fa fa-map-marker"></i> LOCAL MIRACLES
+
+                              <div class="lower-portion">
+
+                                  <div class="portion-inner-upper">
+                                        <div class="portion-left">
+                                            <div class="row">PRIVACY LEVEL</div>
+                                            <div class="row">
+                                              <span class="level-1"></span>
+                                              <span class="level-2"></span>
+                                              <span class="level-3"></span>
+                                              <span class="level-4"></span>
+                                              <span class="level-5"></span>
+                                              <span class="level-6"></span>
+                                              <span class="level-7"></span>
+                                              <span class="level-8"></span>
+                                            </div>
+                                        </div>
+                                        <div class="portion-right">
+                                              <div class="row">
+                                                DISTANCE
+                                              <br>
+                                              10 Mi.
+                                              </div>
+                                        </div>
+                                  </div> <!--portion-inner-upper-->
+
+                                  <div class="portion-inner-lower">
+                                      <div class="map-container" id="map-canvas"></div>
+                                  </div> <!--portion-inner-lower-->
+
+                              </div> <!--lower portion-->
+
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+
+    <div class="panel panel-right panel-reveal">
+      <div class="view view-right">
+
+        <div class="navbar navbar-right">
+          <div class="navbar-inner">
+              <div class="navbar-item navbar-item-left">
+                  <p class="navbar-title active" id="navbar-prayer-points">Prayer Points</p>
+              </div>
+              <div class="navbar-item navbar-item-left">
+                  <p class="navbar-title" id="navbar-pending-requests" >Pending Requests</p>
+              </div>
+              <div class="navbar-item navbar-item-left-last">
+                <p class="navbar-icon" ><i id="navbar-friends" class="fa fa-user" ></i></p>
+              </div>
+          </div>
+        </div>
+
+
+
+        <div class="toolbar">
+          <div class="toolbar-inner">
+              <p> <i class="fa fa-arrow-left"></i> View All <span id="footer-text"> Prayer Points </span> </p>
+          </div>
+        </div>
+        <div class="pages navbar-through toolbar-through">
+          <div data-page="panel-right" class="page">
+            <div class="page-content" data-url = "panel-right2.html">
+                
+                
+            </div> <!--page content-->
+          </div> <!--panel-right1-->
+        </div> <!--pages-->
+
+      </div> <!--view view-right-->
+    </div> <!--panel panel-right-->
+
+
+    <!--main view-->
+    <div class="views">
+      <div class="view view-main">
+
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!--left-->
+            <div class="left">
+              
+              <a href="#" class="open-panel link icon-only">
+                <!-- <i class="icon icon-bars-white"></i> -->
+                <img src="img/logo.png" alt="marturias logo" height="50px" />
+              </a>
+            </div>
+            <!--left-->
+            <!-- <div class="center sliding">
+                <img src="img/logo.png" alt="marturias logo" height="50px" />
+            </div> -->
+            <!--right-->
+            <div class="right">
+              <a href="#" data-panel="right" class="link open-panel icon-only">
+                <i class="icon icon-bars-white"> </i>
+              </a>
+            </div> 
+            <!--right-->
+          </div>
+        </div>
+        
+        <div class="topbar">
+            <p>
+              <span class="bookmark"><i style="color : #ECC753; font-size : 3em;" class="fa fa-bookmark"></i></span>
+              <span style="color : #ECC753; font-size : 3em; padding-left : 5px; padding-right : 5px;" class="bar"> | </span>
+              <span class="global" style="font-size : 2.5em; color : #ECC753; ">GLOBAL : </span>
+              <span class="tobartext" style=" position : relative; color  : white; font-size : 1.3em; top : -4px; ">Russia invades Ukrain, pray for peace...</span>
+              <span class="cross">
+                <i style="font-size: 1.8em; position : absolute; right : 7px; top : 15px; color : #ECC753" class="fa fa-times-circle-o"></i>
+              </span>
+            </p>
+        </div>
+
+        <div class="pages navbar-through toolbar-through">
+          <div data-page="index" class="page">
+            <div class="page-content">
+                
+            </div> <!--page-content-->
+          </div> <!--page-->
+        </div> <!--pages navbar-through toolbar-through-->
+
+      </div>
+    </div>
+    <!--main view-->
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <script type="text/javascript" src="js/kitchen-sink.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="js/global-activity-map.js"></script>
+    
+  </body>
+</html>

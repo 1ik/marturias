@@ -1,0 +1,25 @@
+<?php
+
+    $args = array(
+        'post_type' => 'course'
+    );
+
+    $the_query = new WP_Query( $args );
+    
+    // The Loop
+    if ( $the_query->have_posts() ) {
+            echo '<ul>';
+        while ( $the_query->have_posts() ) {
+            $the_query->the_post();
+            echo '<li>' . get_the_title() . '</li>';
+            $values = get_post_custom_values('course_overview', get_the_ID());
+            echo (get_post_custom_values('course_overview', get_the_ID())[0]);
+        }
+            echo '</ul>';
+    } else {
+        // no posts found
+    }
+    /* Restore original Post Data */
+    wp_reset_postdata();
+    //var_dump($query);
+ ?>
